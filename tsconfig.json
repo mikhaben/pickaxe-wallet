@@ -1,0 +1,21 @@
+{
+  "include": [
+    "./typed-router.d.ts"
+  ],
+  "compilerOptions": {
+    // ...
+    "types": [
+      "unplugin-vue-router/client",
+      "unplugin-icons/types/vue",
+    ]
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
