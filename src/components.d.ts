@@ -9,11 +9,16 @@ declare module 'vue' {
   export interface GlobalComponents {
     FooterNav: typeof import('./components/FooterNav.vue')['default']
     HeaderNav: typeof import('./components/HeaderNav.vue')['default']
+    IconPixelArrowLeft: typeof import('~icons/pixelarticons/arrow-left')['default']
     IconPixelarticonsHome: typeof import('~icons/pixelarticons/home')['default']
     IconPixelClose: typeof import('~icons/pixelarticons/close')['default']
+    IconPixelCopy: typeof import('~icons/pixelarticons/copy')['default']
     IconPixelHome: typeof import('~icons/pixelarticons/home')['default']
     IconPixelMenu: typeof import('~icons/pixelarticons/menu')['default']
+    PBtn: typeof import('./components/base/PBtn.vue')['default']
     PickBtn: typeof import('./components/base/PickBtn.vue')['default']
+    PLink: typeof import('./components/base/PLink.vue')['default']
+    PLoader: typeof import('./components/base/PLoader.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

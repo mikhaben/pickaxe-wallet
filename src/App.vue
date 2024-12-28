@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col bg-gray-950 text-white font-mono">
+  <div class="flex flex-col bg-gray-950 text-white font-mono text-sm">
 
     <header-nav />
 
