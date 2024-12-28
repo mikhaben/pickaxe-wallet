@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'PixelOperator';
+    src: url('../fonts/PixelOperator.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PixelOperatorSC';
+    src: url('../fonts/PixelOperatorSC.ttf') format('truetype');
+}
