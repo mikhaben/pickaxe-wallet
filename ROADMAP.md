@@ -31,7 +31,8 @@ Main goal - user-friendly web2->web3 wallet with multichain support and qute sim
     - [ ] change password
 
 ## Phase 3: Features
-- [ ] Change active color, theme, profile pixel avatar
+- [ ] Change active color, theme, profile pixel avatar (additionally simple icons like heart, star, etc.)
+    - [ ] theme toggle - "retro" (like windows with 2 contr-colors) and "modern"
 - [ ] Desktop layout
 
 ## Long-Term Goals

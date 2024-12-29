@@ -31,6 +31,7 @@ const showPinKeyboard = ref(false)
       v-if="showPinKeyboard"
       @entered="(val) => console.log(val)"
       @close="showPinKeyboard = false"
+      title="Create new PIN"
       click-outside
     />
 

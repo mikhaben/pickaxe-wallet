@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    DialogContainer: typeof import('./components/DialogContainer.vue')['default']
     HomeHero: typeof import('./components/HomeHero.vue')['default']
     IconPixelArrowBarLeft: typeof import('~icons/pixelarticons/arrow-bar-left')['default']
     IconPixelArrowDown: typeof import('~icons/pixelarticons/arrow-down')['default']
