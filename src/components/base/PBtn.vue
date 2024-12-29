@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <button
-    class="font-pixel p-1 border-2 hover:bg-gray-800 active:bg-green-500 select-none flex items-center gap-2 h-max"
+    class="font-pixel p-1 border-2 hover:bg-gray-800 active:bg-green-500 select-none flex items-center gap-2 h-max outline-none"
     :class="{
       'border-gray-800 active:border-green-500': secondary,
       'text-base leading-5': small,
