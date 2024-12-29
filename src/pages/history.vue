@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="">Header</div>
+  <div class="">History</div>
 </template>
 
 <style lang="scss" scoped>

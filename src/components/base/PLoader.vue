@@ -20,7 +20,6 @@ function reset() {
 
 function animate() {
   reset()
-
   for (let i = 0; i < items; i++) {
     const tID = setTimeout(() => {
       visibleArray.value[i] = true
@@ -39,7 +38,7 @@ function animate() {
 
 <template>
   <div class="flex items-center gap-2">
-    <div class="flex items-center border p-1 gap-1 w-max">
+    <div class="flex items-center border-2 p-1 gap-1 w-max">
       <div
         v-for="(_, idx) in items"
         :key="idx"

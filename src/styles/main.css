@@ -11,3 +11,7 @@
     font-family: 'PixelOperatorSC';
     src: url('../fonts/PixelOperatorSC.ttf') format('truetype');
 }
+
+html, body, #app {
+    height: 100%;
+}

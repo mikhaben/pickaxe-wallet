@@ -1,5 +1,10 @@
 # Roadmap
 
+Main goal - user-friendly web2->web3 wallet with multichain support and qute simple pixel interface.
+* simple nice interface
+* multichain support
+* easy to set up and use
+
 ## Phase 1: Initial Release
 - [x] Set up basic UI
     - [ ] figma design
@@ -27,6 +32,7 @@
 
 ## Phase 3: Features
 - [ ] Change active color, theme, profile pixel avatar
+- [ ] Desktop layout
 
 ## Long-Term Goals
 - [ ] Develop mobile application, add multichain xrp, xlm, hedera

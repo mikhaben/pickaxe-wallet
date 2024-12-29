@@ -3,5 +3,9 @@
 </script>
 
 <template>
-  <div class="">Footer</div>
+  <div class=""></div>
 </template>
+
+<style lang="scss" scoped>
+
+</style>
