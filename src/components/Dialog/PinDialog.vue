@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import IconEye from '~icons/pixelarticons/eye'
 import IconEyeClosed from '~icons/pixelarticons/eye-closed'
-import DialogContainer from '@/components/DialogContainer.vue'
 
 const props = defineProps<{
   title?: string
@@ -30,6 +29,8 @@ function close(fromOutside = false) {
 
 <template>
   <dialog-container :title="title ?? 'Enter your PIN'" @close="close">
+
+    <slot name="message" />
 
     <div class="flex justify-around gap-1 mb-2 select-none">
       <div
@@ -62,7 +63,6 @@ function close(fromOutside = false) {
       <p-btn
         @click="emit('entered', input)"
         :disabled="input.length != PIN_LENGTH"
-        class="flex-gro"
       >Continue</p-btn>
     </div>
 

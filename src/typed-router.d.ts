@@ -22,7 +22,9 @@ declare module 'vue-router/auto-routes' {
     '/contacts': RouteRecordInfo<'/contacts', '/contacts', Record<never, never>, Record<never, never>>,
     '/history': RouteRecordInfo<'/history', '/history', Record<never, never>, Record<never, never>>,
     '/landing': RouteRecordInfo<'/landing', '/landing', Record<never, never>, Record<never, never>>,
-    '/profile/landing': RouteRecordInfo<'/profile/landing', '/profile/landing', Record<never, never>, Record<never, never>>,
+    '/profile/': RouteRecordInfo<'/profile/', '/profile', Record<never, never>, Record<never, never>>,
+    '/profile/create': RouteRecordInfo<'/profile/create', '/profile/create', Record<never, never>, Record<never, never>>,
+    '/profile/import': RouteRecordInfo<'/profile/import', '/profile/import', Record<never, never>, Record<never, never>>,
     '/settings/': RouteRecordInfo<'/settings/', '/settings', Record<never, never>, Record<never, never>>,
   }
 }

@@ -14,7 +14,7 @@ defineProps<{
 
     <div class="p-3 border-t-2 border-gray-800 bg-gray-900">
       <div v-if="title" class="flex flex-col">
-        <div class="flex justify-between mb-3">
+        <div class="flex justify-between mb-2">
           <h2 class="text-3xl font-pixel">{{ title }}</h2>
           <p-btn small secondary @click="emit('close')">
             <icon-pixel-close />

@@ -19,12 +19,12 @@ const checked = computed({
 
 <template>
   <div class="flex items-center">
-    <div class="border-2 border-gray-800 w-max p-1 relative">
+    <div class="border-2 border-gray-700 w-max p-1 relative">
       <div
         class="w-3 h-3 relative flex items-center justify-center"
         :class="{
           'bg-green-500': !checkMark && checked,
-          'bg-gray-800': !checkMark && !checked,
+          'bg-gray-700': !checkMark && !checked,
           'bg-gray-900 text-green-500 border-green-500': checkMark && checked,
           'opacity-0': checkMark && !checked,
           'mr-3': toggle && !checked,
