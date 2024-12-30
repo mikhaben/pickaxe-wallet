@@ -5,9 +5,13 @@ definePage({
     hideFooter: true
   }
 })
+const router = useRouter()
 
 const showPinKeyboard = ref(false)
 
+function setPin(pin: string) {
+  console.log(pin)
+}
 </script>
 
 <template>
@@ -22,14 +26,14 @@ const showPinKeyboard = ref(false)
       <p-btn>
         Import existing wallet
       </p-btn>
-      <!--<p-btn secondary class="mt-1">-->
-      <!--  Advanced flow-->
-      <!--</p-btn>-->
+      <p-btn @click="router.push('/profile/landing')" secondary class="mt-1">
+        Advanced flow
+      </p-btn>
     </div>
 
     <pin-keyboard
       v-if="showPinKeyboard"
-      @entered="(val) => console.log(val)"
+      @entered="setPin"
       @close="showPinKeyboard = false"
       title="Create new PIN"
       click-outside

@@ -38,7 +38,7 @@ function animate() {
 
 <template>
   <div class="flex items-center gap-2">
-    <div class="flex items-center border-2 p-1 gap-1 w-max">
+    <div class="flex items-center border-2 border-gray-800 p-1 gap-1 w-max">
       <div
         v-for="(_, idx) in items"
         :key="idx"
