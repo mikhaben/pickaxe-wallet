@@ -1,5 +1,9 @@
 <script lang="ts" setup>
-const {items = 10} = defineProps<{ items?: number, progressText?: boolean }>()
+const {items = 10} = defineProps<{
+  items?: number,
+  progressText?: boolean
+  borderless?: boolean
+}>()
 const delay = 0.6
 const visibleArray = ref(Array(items).fill(false))
 const timeouts = ref<number[]>([])
@@ -38,7 +42,10 @@ function animate() {
 
 <template>
   <div class="flex items-center gap-2">
-    <div class="flex items-center border-2 border-gray-700 p-1 gap-1 w-max">
+    <div
+      class="flex items-center border-gray-700 p-1 gap-1 w-max"
+      :class="borderless ? 'border-0' : 'border-2'"
+    >
       <div
         v-for="(_, idx) in items"
         :key="idx"

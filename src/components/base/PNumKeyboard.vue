@@ -17,17 +17,18 @@ onMounted(() => window.addEventListener('keydown', handleKeyPress))
 onUnmounted(() => window.removeEventListener('keydown', handleKeyPress))
 
 function handleKeyPress(event: KeyboardEvent): void {
-  // Ensure that the key pressed is a number or a backspace
-  const key = event.key;
-  if (key === "Backspace" || key === "Delete") {
-    removeVal();
-  } if (key === "Enter") {
-    return;
-  } else {
-    const num = parseInt(key, 10);
-    if (!isNaN(num) && btns.includes(num)) {
-      addValue(num);
-    }
+  switch (event.key) {
+    case "Backspace":
+    case "Delete":
+      removeVal();
+      break;
+    case "Enter":
+      return;
+    default:
+      const num = parseInt(event.key, 10);
+      if (!isNaN(num) && btns.includes(num)) {
+        addValue(num);
+      }
   }
 }
 

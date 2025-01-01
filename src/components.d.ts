@@ -7,7 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    DialogContainer: typeof import('./components/Dialog/DialogContainer.vue')['default']
+    DialogContainer: typeof import('./components/dialog/DialogContainer.vue')['default']
     HomeHero: typeof import('./components/HomeHero.vue')['default']
     IconPixelArrowBarLeft: typeof import('~icons/pixelarticons/arrow-bar-left')['default']
     IconPixelArrowDown: typeof import('~icons/pixelarticons/arrow-down')['default']
@@ -29,6 +29,7 @@ declare module 'vue' {
     IconPixelPencil: typeof import('~icons/pixelarticons/pencil')['default']
     IconPixelReload: typeof import('~icons/pixelarticons/reload')['default']
     IconPixelSort: typeof import('~icons/pixelarticons/sort')['default']
+    MsgDialog: typeof import('./components/dialog/MsgDialog.vue')['default']
     NavFooter: typeof import('./components/NavFooter.vue')['default']
     NavHeader: typeof import('./components/NavHeader.vue')['default']
     NumKeyboard: typeof import('./components/base/NumKeyboard.vue')['default']
@@ -36,7 +37,7 @@ declare module 'vue' {
     PBtn: typeof import('./components/base/PBtn.vue')['default']
     PCheckbox: typeof import('./components/base/PCheckbox.vue')['default']
     PickBtn: typeof import('./components/base/PickBtn.vue')['default']
-    PinDialog: typeof import('./components/Dialog/PinDialog.vue')['default']
+    PinDialog: typeof import('./components/dialog/PinDialog.vue')['default']
     PinKeyboard: typeof import('./components/PinDialog.vue')['default']
     PInput: typeof import('./components/base/PInput.vue')['default']
     PKeyboard: typeof import('./components/base/PNumKeyboard.vue')['default']
@@ -44,7 +45,8 @@ declare module 'vue' {
     PLoader: typeof import('./components/base/PLoader.vue')['default']
     PNumKeyboard: typeof import('./components/base/PNumKeyboard.vue')['default']
     Profile: typeof import('./components/Profile.vue')['default']
-    PswdDialog: typeof import('./components/Dialog/PswdDialog.vue')['default']
+    PswdDialog: typeof import('./components/dialog/PswdDialog.vue')['default']
+    PTextarea: typeof import('./components/base/PTextarea.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

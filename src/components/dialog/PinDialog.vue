@@ -15,6 +15,23 @@ const input = ref('')
 const activeIdx = computed(() => input.value.length + 1)
 const revealInput = ref(false)
 
+onMounted(() => window.addEventListener('keydown', handleKeyPress))
+
+onUnmounted(() => window.removeEventListener('keydown', handleKeyPress))
+
+function handleKeyPress(event: KeyboardEvent): void {
+  switch (event.key) {
+    case "Enter":
+      if (input.value.length === PIN_LENGTH) {
+        emit('entered', input.value)
+      }
+      break;
+    case "Escape":
+      close()
+      break;
+  }
+}
+
 function setValue(value: string) {
   if (value.length > PIN_LENGTH) return
   input.value = value

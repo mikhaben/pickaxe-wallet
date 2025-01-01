@@ -10,6 +10,23 @@ const emit = defineEmits<{
 
 const input = ref('')
 
+onMounted(() => window.addEventListener('keydown', handleKeyPress))
+
+onUnmounted(() => window.removeEventListener('keydown', handleKeyPress))
+
+function handleKeyPress(event: KeyboardEvent): void {
+  switch (event.key) {
+    case "Enter":
+      if (input.value.length) {
+        emit('entered', input.value)
+      }
+      break;
+    case "Escape":
+      close()
+      break;
+  }
+}
+
 function close(fromOutside = false) {
   if (fromOutside && !props.clickOutside)
     return
