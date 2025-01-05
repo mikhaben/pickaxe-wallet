@@ -6,7 +6,7 @@ const emit = defineEmits<{
 }>()
 const props = defineProps<{
   modelValue: boolean
-  label: string
+  label?: string
   toggle?: boolean
   checkMark?: boolean
 }>()
@@ -40,6 +40,6 @@ const checked = computed({
         class="absolute top-0 right-0 bottom-0 left-0 outline-none opacity-0 cursor-pointer"
       />
     </div>
-    <label class="ml-2 cursor-pointer" :for="id">{{ label }}</label>
+    <label v-if="label" :for="id" class="ml-2 cursor-pointer">{{ label }}</label>
   </div>
 </template>

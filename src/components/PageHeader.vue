@@ -7,7 +7,7 @@ const router = useRouter()
 </script>
 
 <template>
-  <div class="grid grid-cols-[min-content_auto_min-content] items-end gap-1 mb-3">
+  <div class="grid grid-cols-[min-content_auto_min-content] items-end gap-1 mb-5">
     <div class="min-w-9">
       <p-btn v-if="back" @click="router.back()" small secondary>
         <icon-pixel-arrow-left />

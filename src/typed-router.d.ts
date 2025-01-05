@@ -26,6 +26,13 @@ declare module 'vue-router/auto-routes' {
     '/profile/create': RouteRecordInfo<'/profile/create', '/profile/create', Record<never, never>, Record<never, never>>,
     '/profile/import': RouteRecordInfo<'/profile/import', '/profile/import', Record<never, never>, Record<never, never>>,
     '/settings/': RouteRecordInfo<'/settings/', '/settings', Record<never, never>, Record<never, never>>,
+    '/settings/about': RouteRecordInfo<'/settings/about', '/settings/about', Record<never, never>, Record<never, never>>,
+    '/settings/appearance': RouteRecordInfo<'/settings/appearance', '/settings/appearance', Record<never, never>, Record<never, never>>,
     '/settings/backup': RouteRecordInfo<'/settings/backup', '/settings/backup', Record<never, never>, Record<never, never>>,
+    '/settings/donate': RouteRecordInfo<'/settings/donate', '/settings/donate', Record<never, never>, Record<never, never>>,
+    '/settings/help': RouteRecordInfo<'/settings/help', '/settings/help', Record<never, never>, Record<never, never>>,
+    '/settings/language': RouteRecordInfo<'/settings/language', '/settings/language', Record<never, never>, Record<never, never>>,
+    '/settings/notifications': RouteRecordInfo<'/settings/notifications', '/settings/notifications', Record<never, never>, Record<never, never>>,
+    '/settings/security': RouteRecordInfo<'/settings/security', '/settings/security', Record<never, never>, Record<never, never>>,
   }
 }

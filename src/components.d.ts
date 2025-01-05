@@ -16,7 +16,9 @@ declare module 'vue' {
     IconPixelArrowUp: typeof import('~icons/pixelarticons/arrow-up')['default']
     IconPixelarticonsHome: typeof import('~icons/pixelarticons/home')['default']
     IconPixelCheck: typeof import('~icons/pixelarticons/check')['default']
+    IconPixelCheckmark: typeof import('~icons/pixelarticons/checkmark')['default']
     IconPixelChevronDown: typeof import('~icons/pixelarticons/chevron-down')['default']
+    IconPixelChevronRight: typeof import('~icons/pixelarticons/chevron-right')['default']
     IconPixelClose: typeof import('~icons/pixelarticons/close')['default']
     IconPixelCopy: typeof import('~icons/pixelarticons/copy')['default']
     IconPixelDownasaur: typeof import('~icons/pixelarticons/downasaur')['default']
@@ -42,6 +44,8 @@ declare module 'vue' {
     PInput: typeof import('./components/base/PInput.vue')['default']
     PKeyboard: typeof import('./components/base/PNumKeyboard.vue')['default']
     PLink: typeof import('./components/base/PLink.vue')['default']
+    PList: typeof import('./components/base/PList.vue')['default']
+    PListItem: typeof import('./components/base/PListItem.vue')['default']
     PLoader: typeof import('./components/base/PLoader.vue')['default']
     PNumKeyboard: typeof import('./components/base/PNumKeyboard.vue')['default']
     Profile: typeof import('./components/Profile.vue')['default']
@@ -49,5 +53,6 @@ declare module 'vue' {
     PTextarea: typeof import('./components/base/PTextarea.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Socials: typeof import('./components/Socials.vue')['default']
   }
 }
