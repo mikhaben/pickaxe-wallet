@@ -9,7 +9,7 @@ const hideNav = computed(() => route.meta.hideNavigation)
     <nav-header v-if="!hideNav"/>
 
     <div
-      :class="{'py-2': !hideNav, 'py-3': hideNav}"
+      :class="{ 'py-2': !hideNav, 'py-3': hideNav }"
       class="px-3 flex-1 overflow-auto"
     >
       <router-view />

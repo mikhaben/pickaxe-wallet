@@ -12,7 +12,8 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        {'vue-router/auto': ['useRoute', 'useRouter']},
+        'vue-i18n',
+        { 'vue-router/auto': [ 'useRoute', 'useRouter' ] },
       ],
       dts: 'src/auto-imports.d.ts',
       eslintrc: {
@@ -28,7 +29,7 @@ export default defineConfig({
           alias: {
             'pixel': 'pixelarticons',
           },
-          enabledCollections: ['pixelarticons'],
+          enabledCollections: [ 'pixelarticons' ],
         }),
       ],
     }),
@@ -45,6 +46,6 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
-    extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
+    extensions: [ '.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue' ],
   },
 })

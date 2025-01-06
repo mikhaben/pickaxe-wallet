@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-const seed12 = ['dry', 'head', 'evil', 'custom', 'kit', 'mosquito', 'skirt', 'since', 'tide', 'cat', 'large', 'olive']
-const seed24 = ['dry', 'head', 'evil', 'custom', 'kit', 'mosquito', 'skirt', 'since', 'tide', 'cat', 'large', 'olive', 'dry', 'head', 'evil', 'custom', 'kit', 'mosquito', 'skirt', 'since', 'tide', 'cat', 'large', 'olive']
+const seed12 = [ 'dry', 'head', 'evil', 'custom', 'kit', 'mosquito', 'skirt', 'since', 'tide', 'cat', 'large', 'olive' ]
+const seed24 = [ 'dry', 'head', 'evil', 'custom', 'kit', 'mosquito', 'skirt', 'since', 'tide', 'cat', 'large', 'olive', 'dry', 'head', 'evil', 'custom', 'kit', 'mosquito', 'skirt', 'since', 'tide', 'cat', 'large', 'olive' ]
 const dialogConfigs = {
   seedPhrase: {
     title: 'What is a seed phrase?',
@@ -20,7 +20,7 @@ definePage({
 const use12Words = ref(false)
 const isAgreed = ref(false)
 const passphrase = ref('')
-const activeDialog = ref<typeof dialogConfigs[keyof typeof dialogConfigs] | null>(null)
+const activeDialog = ref<typeof dialogConfigs[ keyof typeof dialogConfigs ] | null>(null)
 const seed = computed(() => use12Words.value ? seed12 : seed24)
 </script>
 
@@ -38,9 +38,9 @@ const seed = computed(() => use12Words.value ? seed12 : seed24)
     <div v-if="seed" class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-2 mb-5">
       <div v-for="(word, idx) in seed" :key="word">
         <div class="flex border-2 border-gray-800 p-1">
-          <span class="text-gray-500 min-w-4">{{idx+1}}</span>
+          <span class="text-gray-500 min-w-4">{{ idx+1 }}</span>
           <div class="border-r-2 border-gray-800 pr-2 mr-2"/>
-          <span>{{word}}</span>
+          <span>{{ word }}</span>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@ const seed = computed(() => use12Words.value ? seed12 : seed24)
       :title="activeDialog?.title"
       @close="activeDialog = null"
     >
-      <p>{{activeDialog.content}}</p>
+      <p>{{ activeDialog.content }}</p>
     </dialog-container>
 
   </div>

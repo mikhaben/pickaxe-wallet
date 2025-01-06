@@ -5,7 +5,7 @@ const props = defineProps<{
 const emit = defineEmits<{
   (e: 'input', val: string): void
 }>()
-const btns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+const btns = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]
 const input = ref('')
 
 watch(input, (val) => {
@@ -50,14 +50,14 @@ function removeVal() {
       :key="b"
       @click="addValue(b)"
       class="p-2 hover:bg-gray-800 active:text-green-500 select-none outline-none"
-      :class="{'col-start-2': b === 0}"
+      :class="{ 'col-start-2': b === 0 }"
     >{{ b }}</button>
     <div class="col-start-1 row-start-4 select-none">
       <slot />
     </div>
     <button
       @click="removeVal"
-      :class="{'pointer-events-none text-gray-500': input.length === 0}"
+      :class="{ 'pointer-events-none text-gray-500': input.length === 0 }"
       class="p-2 hover:bg-gray-800 active:text-green-500 flex items-center justify-center col-start-3 row-start-4 select-none outline-none"
     >
       <icon-pixel-arrow-bar-left />

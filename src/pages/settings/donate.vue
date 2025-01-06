@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-definePage({meta: {hideNavigation: true}})
+definePage({ meta: { hideNavigation: true } })
 </script>
 
 <template>

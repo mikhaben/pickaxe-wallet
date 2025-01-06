@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const {items = 10} = defineProps<{
+const { items = 10 } = defineProps<{
   items?: number,
   progressText?: boolean
   borderless?: boolean

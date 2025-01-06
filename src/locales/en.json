@@ -1,0 +1,13 @@
+{
+  "navFooterHome": "Home",
+  "navFooterHistory": "History",
+  "navFooterContacts": "Contacts",
+  "localeEn": "English",
+  "localeRu": "Russian",
+  "localeEs": "Spanish",
+  "localeFr": "French",
+  "appName": "pickaxe",
+  "appVersion": "App version: {0}",
+  "appLicense": "License: {0}",
+  "appAuthor": "Author:"
+}

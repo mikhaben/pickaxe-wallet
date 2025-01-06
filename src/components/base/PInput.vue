@@ -21,7 +21,7 @@ const input = computed({
       :placeholder="placeholder"
       type="text"
       class="text-white bg-gray-800 border-2 border-gray-800 hover:border-b-gray-500 focus:border-b-green-500 p-1 leading-6 outline-none"
-      :class="{'w-full': grow}"
+      :class="{ 'w-full': grow }"
     >
   </div>
 </template>

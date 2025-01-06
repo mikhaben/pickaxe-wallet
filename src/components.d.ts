@@ -26,6 +26,7 @@ declare module 'vue' {
     IconPixelEye: typeof import('~icons/pixelarticons/eye')['default']
     IconPixelEyeClosed: typeof import('~icons/pixelarticons/eye-closed')['default']
     IconPixelGithub: typeof import('~icons/pixelarticons/github')['default']
+    IconPixelHeart: typeof import('~icons/pixelarticons/heart')['default']
     IconPixelHome: typeof import('~icons/pixelarticons/home')['default']
     IconPixelMenu: typeof import('~icons/pixelarticons/menu')['default']
     IconPixelPencil: typeof import('~icons/pixelarticons/pencil')['default']

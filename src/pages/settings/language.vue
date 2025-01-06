@@ -1,9 +1,14 @@
 <script lang="ts" setup>
-definePage({meta: {hideNavigation: true}})
+definePage({ meta: { hideNavigation: true } })
 
-const items = ['English', 'Spanish', 'France']
-const selected = ref(items[0])
+const { t, locale } = useI18n()
 
+const items = computed(() => [
+  { name: t('localeEn'), code: 'en' },
+  { name: t('localeEs'), code: 'es' },
+  { name: t('localeFr'), code: 'fr' },
+  { name: t('localeRu'), code: 'ru' },
+]);
 </script>
 
 <template>
@@ -13,16 +18,16 @@ const selected = ref(items[0])
 
     <div class="flex flex-col">
       <ul class="mb-3 border-2 border-gray-800">
-        <li v-for="(item, idx) in items" :key="item">
+        <li v-for="(item, idx) in items" :key="item.code">
           <button
-            @click="selected = item"
-            :class="{'border-b-2 border-gray-800': idx !== items.length - 1}"
+            @click="locale = item.code"
+            :class="{ 'border-b-2 border-gray-800': idx !== items.length - 1 }"
             class="w-full flex items-center justify-between p-1 hover:bg-gray-800 active:bg-green-500"
           >
             <span class="flex items-center gap-3">
-              <span class="text-xl font-pixel">{{ item }}</span>
+              <span class="text-xl font-pixel">{{ item.name }}</span>
             </span>
-            <icon-pixel-check v-if="selected === item" class="text-base text-green-500"/>
+            <icon-pixel-check v-if="locale === item.code" class="text-base text-green-500"/>
           </button>
         </li>
       </ul>

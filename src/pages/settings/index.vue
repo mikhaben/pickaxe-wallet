@@ -17,18 +17,18 @@ const router = useRouter();
 
 const list = [
   [
-    {title: 'Appearance', icon: iconFill, link: '/settings/appearance'},
-    {title: 'Language', icon: iconAB, link: '/settings/language'}
+    { title: 'Appearance', icon: iconFill, link: '/settings/appearance' },
+    { title: 'Language', icon: iconAB, link: '/settings/language' }
   ],
   [
-    {title: 'Security', icon: iconShield, link: '/settings/security'},
-    {title: 'Backup', icon: iconCloud, link: '/settings/backup'},
-    {title: 'Notifications', icon: iconNotification, link: '/settings/notifications'},
+    { title: 'Security', icon: iconShield, link: '/settings/security' },
+    { title: 'Backup', icon: iconCloud, link: '/settings/backup' },
+    { title: 'Notifications', icon: iconNotification, link: '/settings/notifications' },
   ],
   [
-    {title: 'About', icon: iconScript, link: '/settings/about'},
-    {title: 'Say thank you', icon: iconHeart, link: '/settings/donate'},
-    {title: 'Report a problem', icon: iconDebug, link: '/settings/help'},
+    { title: 'About', icon: iconScript, link: '/settings/about' },
+    { title: 'Say thank you', icon: iconHeart, link: '/settings/donate' },
+    { title: 'Report a problem', icon: iconDebug, link: '/settings/help' },
   ]
 ];
 </script>
@@ -43,7 +43,7 @@ const list = [
         <li v-for="(item, idx) in group" :key="item.title">
           <button
             @click="router.push(item.link)"
-            :class="{'border-b-2 border-gray-800': idx !== group.length - 1}"
+            :class="{ 'border-b-2 border-gray-800': idx !== group.length - 1 }"
             class="w-full flex items-center justify-between p-1 hover:bg-gray-800 active:bg-green-500"
           >
             <span class="flex items-center gap-3">

@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pixel: ['PixelOperator', 'roboto', 'sans-serif'],
-        'pixel-sc': ['PixelOperatorSC', 'roboto', 'sans-serif'],
+        pixel: [ 'PixelOperator', 'roboto', 'sans-serif' ],
+        'pixel-sc': [ 'PixelOperatorSC', 'roboto', 'sans-serif' ],
       }
     },
   },

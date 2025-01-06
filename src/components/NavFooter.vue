@@ -2,30 +2,32 @@
 import iconHome from '~icons/pixelarticons/home'
 import iconClock from '~icons/pixelarticons/clock'
 import iconContact from '~icons/pixelarticons/user'
+import { useI18n } from 'vue-i18n'
 
 const route = useRoute()
 const router = useRouter()
+const { t } = useI18n()
 
 enum menuRoutes {
   HOME = '/',
   HISTORY = '/history',
-  CONTACT = '/contacts',
+  CONTACTS = '/contacts',
 }
 
 const btns = [
   {
-    text: 'Home',
+    text: t('navFooterHome'),
     route: menuRoutes.HOME,
     icon: iconHome,
   },
   {
-    text: 'History',
+    text: t('navFooterHistory'),
     route: menuRoutes.HISTORY,
     icon: iconClock,
   },
   {
-    text: 'Contacts',
-    route: menuRoutes.CONTACT,
+    text: t('navFooterContacts'),
+    route: menuRoutes.CONTACTS,
     icon: iconContact,
   },
 ]

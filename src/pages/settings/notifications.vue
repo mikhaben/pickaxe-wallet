@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import Socials from '@/components/Socials.vue'
 
-definePage({meta: {hideNavigation: true}})
+definePage({ meta: { hideNavigation: true } })
 
 const email = ref(true)
 const pushNotification = ref(true)

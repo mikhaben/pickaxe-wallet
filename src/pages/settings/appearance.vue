@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-definePage({meta: {hideNavigation: true}})
+definePage({ meta: { hideNavigation: true } })
 
 const darkMode = ref(true)
 const retroMode = ref(false)
 
-const accentColors = ['bg-green-500', 'bg-blue-500', 'bg-yellow-500', 'bg-orange-500', 'bg-red-500']
+const accentColors = [ 'bg-green-500', 'bg-blue-500', 'bg-yellow-500', 'bg-orange-500', 'bg-red-500' ]
 const active = ref(accentColors[0])
 </script>
 
@@ -21,7 +21,7 @@ const active = ref(accentColors[0])
           <div
             v-for="i in accentColors"
             :key="i"
-            :class="{'border-white pointer-events-none': i === active}"
+            :class="{ 'border-white pointer-events-none': i === active }"
             @click="active = i"
             class="p-1 border-2 border-gray-800 cursor-pointer mb-1"
           >

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-definePage({meta: {hideNavigation: true}})
+definePage({ meta: { hideNavigation: true } })
 
-const profiles = ['Profile 1', 'Profile 2', 'Profile 3']
+const profiles = [ 'Profile 1', 'Profile 2', 'Profile 3' ]
 const selected = ref<string[]>([])
 const cloudStorage = ref(false)
 const localStorage = ref(false)
@@ -23,6 +23,7 @@ function select(item: string) {
 
     <div class="flex flex-col">
       <p class="mb-5">Backup your data to keep it safe and secure.</p>
+
       <div class="mb-5 flex flex-col gap-2">
         <p>Choose destination</p>
         <div class="flex flex-col">
@@ -35,16 +36,17 @@ function select(item: string) {
         </div>
         <div class="flex flex-col">
           <p-checkbox v-model="manualBackup" label="Manual backup" toggle />
-          <p class="ml-11 text-gray-500">Backup your data manually</p>
+          <p class="ml-11 text-gray-500">You will be provided through manual backup screens.</p>
         </div>
       </div>
-      <div class="flex flex-col gap-1">
+
+      <div class="flex flex-col gap-1 mb-5">
         <p>Choose profiles to backup</p>
         <ul class="border-2 border-gray-800">
           <li v-for="(item, idx) in profiles" :key="idx" class="flex">
             <button
               @click="select(item)"
-              :class="{'border-b-2 border-gray-800': idx !== profiles.length - 1}"
+              :class="{ 'border-b-2 border-gray-800': idx !== profiles.length - 1 }"
               class="w-full flex items-center justify-between p-1 hover:bg-gray-800 active:bg-green-500"
             >
             <span class="flex items-center gap-3">
@@ -54,6 +56,10 @@ function select(item: string) {
             </button>
           </li>
         </ul>
+      </div>
+
+      <div class="flex justify-end">
+        <p-btn>Confirm</p-btn>
       </div>
     </div>
 

@@ -10,8 +10,8 @@
     <p-btn secondary small>
       Github
     </p-btn>
-    <p-btn secondary small>
-      X.com
-    </p-btn>
+    <!--<p-btn secondary small>-->
+    <!--  X.com-->
+    <!--</p-btn>-->
   </div>
 </template>
